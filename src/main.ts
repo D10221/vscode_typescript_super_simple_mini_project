@@ -1,0 +1,2 @@
+// Nada
+document.write('hello');

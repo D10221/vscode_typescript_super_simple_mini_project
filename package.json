@@ -1,0 +1,32 @@
+{
+  "name": "vscode-typescript-project",
+  "version": "0.0.1",
+  "description": "typescript super simple mini typescript project",
+  "main": "./built/bundle.js",
+  "author": "Me",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.5.0"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/D10221/react-templates-typescript.git"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "shelljs": "^0.5.3",
+    "ts-loader": "^0.5.5",
+    "typescript": "^1.4.1"
+  },
+  "keywords": [    
+    "vscode",
+    "typescript"
+  ],
+  "scripts": {
+    "start": "http-server",    
+    "ts": "tsc",
+    "webpack": "webpack",
+    "build" : "node tools/build_rt.js && tsc && webpack",
+    "test" : "node tools/build_test.js && mocha test"
+  }
+}
